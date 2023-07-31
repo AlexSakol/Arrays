@@ -23,13 +23,13 @@
 
     static void Main(string[] args)
     {
-        Random Rand = new Random();
-        Console.WriteLine("Введите максимальное значение");
-        int max = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Введите минимальное значение");
-        int min = Convert.ToInt32(Console.ReadLine());
         try
         {
+            Random Rand = new Random();
+            Console.WriteLine("Введите максимальное значение");
+            int max = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите минимальное значение");
+            int min = Convert.ToInt32(Console.ReadLine());        
             Console.WriteLine("Введите количество элементов");
             int n = Convert.ToInt32(Console.ReadLine());
             int[] massiv = new int[n];

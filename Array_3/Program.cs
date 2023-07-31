@@ -25,15 +25,15 @@
 
     private static void Main(string[] args)
     {
-        Random Rand = new Random();
-        Console.WriteLine("Введите максимальное значение");
-        int Max = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Введите минимальное значение");
-        int Min = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Введите размерность массива");
-        int n = Convert.ToInt32(Console.ReadLine());
         try
         {
+            Random Rand = new Random();
+            Console.WriteLine("Введите максимальное значение");
+            int Max = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите минимальное значение");
+            int Min = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите размерность массива");
+            int n = Convert.ToInt32(Console.ReadLine());       
             int[][] mas = new int[n][];
             for (int i = 0; i < n; i++)
             {

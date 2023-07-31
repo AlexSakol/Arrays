@@ -21,17 +21,21 @@ internal class Program
     }
     internal static void Main(string[] args)
     {
-        Console.WriteLine("Введите последовательно пять букв через enter");
-        char ch1 = Convert.ToChar(Console.ReadLine());
-        char ch2 = Convert.ToChar(Console.ReadLine());
-        char ch3 = Convert.ToChar(Console.ReadLine());
-        char ch4 = Convert.ToChar(Console.ReadLine());
-        char ch5 = Convert.ToChar(Console.ReadLine());
-        Console.WriteLine("Введите строку из пяти символов");
-        string str = Console.ReadLine();
-        if (ConvertChar(str, ref ch1, ref ch2, ref ch3, ref ch4, ref ch5) != false)
+        try
         {
-            Console.WriteLine($"{ch1}, {ch2}, {ch3}, {ch4}, {ch5}");
+            Console.WriteLine("Введите последовательно пять букв через enter");
+            char ch1 = Convert.ToChar(Console.ReadLine());
+            char ch2 = Convert.ToChar(Console.ReadLine());
+            char ch3 = Convert.ToChar(Console.ReadLine());
+            char ch4 = Convert.ToChar(Console.ReadLine());
+            char ch5 = Convert.ToChar(Console.ReadLine());
+            Console.WriteLine("Введите строку из пяти символов");
+            string str = Console.ReadLine();
+            if (ConvertChar(str, ref ch1, ref ch2, ref ch3, ref ch4, ref ch5) != false)
+            {
+                Console.WriteLine($"{ch1}, {ch2}, {ch3}, {ch4}, {ch5}");
+            }
         }
+        catch (Exception ex) { Console.WriteLine($"{ex}"); }
     }
 }
